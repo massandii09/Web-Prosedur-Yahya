@@ -1,0 +1,16 @@
+.anime-icon {
+    /* Atur ukuran gambar agar sesuai dengan tinggi teks */
+    height: 1.2em; /* Atau sesuaikan ukuran yang Anda inginkan (misalnya 32px) */
+    width: auto;
+    
+    /* Beri sedikit jarak di sebelah kanan agar tidak menempel pada teks */
+    margin-right: 10px; 
+    
+    /* Pastikan gambar sejajar dengan teks */
+    vertical-align: middle; 
+}
+
+/* Ini adalah CSS h1 yang sebelumnya sudah kita bahas, pastikan masih ada */
+h1 {
+    /* ... properti h1 yang sudah Anda atur (warna kuning, border, dll.) ... */
+}
