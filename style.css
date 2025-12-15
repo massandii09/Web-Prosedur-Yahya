@@ -13,4 +13,60 @@
 /* Ini adalah CSS h1 yang sebelumnya sudah kita bahas, pastikan masih ada */
 h1 {
     /* ... properti h1 yang sudah Anda atur (warna kuning, border, dll.) ... */
+
+}
+
+/* ==================================== */
+/* 📱 MEDIA QUERY KHUSUS LAYAR HP (MAX 600px) */
+/* ==================================== */
+@media screen and (max-width: 600px) {
+    /* Menyesuaikan Margin dan Padding Container */
+    .container {
+        margin: 10px; /* Kurangi margin atas/bawah */
+        padding: 20px; /* Kurangi padding dalam */
+        /* max-width: 100%; <- Tidak perlu karena 900px sudah diatasi oleh device-width */
+    }
+
+    /* Mengurangi Padding Body */
+    body {
+        padding: 10px; /* Kurangi padding body secara keseluruhan */
+    }
+
+    /* Ukuran Font dan Judul agar tidak terlalu besar */
+    h1 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Penyesuaian Kotak Informasi Produk */
+    .product-info strong {
+        width: 100px; /* Kurangi lebar agar tidak memakan banyak tempat */
+        margin-right: 5px;
+    }
+
+    /* Membuat Tabel Keterangan (Legend) Lebih Responsif */
+    .legend-table {
+        width: 100%; /* Buat tabel mengisi seluruh lebar layar */
+        margin: 15px auto;
+        display: block; /* Memungkinkan tabel untuk digulir (jika diperlukan) */
+    }
+    
+    /* Memastikan konten di dalam sel tabel dapat menyesuaikan */
+    .legend-table td {
+        padding: 8px;
+        display: table-cell; /* Tetap pertahankan sebagai sel tabel */
+        text-align: left;
+    }
+    
+    /* Kolom Angka (pertama) agar lebarnya lebih kecil */
+    .legend-table td:first-child {
+        width: 15%; /* Berikan lebar kecil untuk angka/kode */
+    }
 }
